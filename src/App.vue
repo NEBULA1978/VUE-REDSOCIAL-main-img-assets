@@ -2,14 +2,17 @@
   <div id="app">
     <NavComp />
     <router-view />
+    <!-- <img alt="Vue logo" src="../src/assets/model-x.avif"> -->
   </div>
-  <img alt="Vue logo" src="../src/assets/model-x.avif">
-  <div>
+  <!-- <div>
     <SignIn />
-  </div>
-  <div>
+  </div> -->
+  <!-- <div>
     <SignIn />
-  </div>
+  </div> -->
+  <!-- <div>
+    <SignIn />
+  </div> -->
 </template>
 
 <script setup>

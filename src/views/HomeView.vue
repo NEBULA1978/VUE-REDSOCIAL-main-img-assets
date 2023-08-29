@@ -4,6 +4,7 @@
     <div class="content">
       <h1>This is the Home Page</h1>
     </div>
+    <img alt="Vue logo" src="/src/assets/model-x.avif">
   </div>
 </template>
 
