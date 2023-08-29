@@ -1,0 +1,394 @@
+Instalr Vue3:
+vue create redsocial
+
+
+Vue CLI v5.0.8
+? Please pick a preset: Manually select features
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+❯◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+ ◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+ ◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+ ◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+ ◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+ ◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+ ◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+ ◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+ ◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+ ◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+ ◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+ ◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+ ◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+ ◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+ ◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+❯◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+ ◉ Babel
+? Check the features needed for your project: (Press 
+<space> to select, <a> to toggle all, <i> to invert 
+selection, and <enter> to proceed)
+❯◉ Babel
+? Check the features needed for your project: Babel, 
+Router, Vuex
+? Choose a version of Vue.js that you want to start 
+the project with 3.x
+? Use history mode for router? (Requires proper server
+ setup for index fallback in production) Yes
+? Where do you prefer placing config for Babel, 
+ESLint, etc.? In package.json
+? Save this as a preset for future projects? No
+
+
+Vue CLI v5.0.8
+✨  Creating project in /home/next/Vídeos/subirGithub/VEU3Facebook/redsocial.
+🗃  Initializing git repository...
+⚙️  Installing CLI plugins. This might take a while...
+
+
+added 842 packages, and audited 843 packages in 2m
+
+93 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+🚀  Invoking generators...
+📦  Installing additional dependencies...
+
+
+added 17 packages, and audited 860 packages in 8s
+
+94 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+⚓  Running completion hooks...
+
+📄  Generating README.md...
+
+🎉  Successfully created project redsocial.
+👉  Get started with the following commands:
+
+ $ cd redsocial
+ $ npm run serve
+
+/////////////////////////
+Primera forma rapida en bootstra copiar cdn para probar solo: 
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css
+
+Vamos a public en index.html:
+
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+
+SEGUNDA FORMA UTILIZADA:
+
+Vamos a página y descargamos  https://getbootstrap.com/docs/5.3/getting-started/download/
+EN la carpeta tenemos dos archivos
+Entramos en css:
+bootstrap.rtl.min.css
+
+En archivo main.js
+ importamos css:
+ 
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import store from "./store";
+import "@/assets/bootstrap.rtl.min.css";
+
+createApp(App).use(store).use(router).mount("#app");
+
+EN Archivo App.vue elimino el css:
+<style>
+#app {
+
+  color: #2c3e50;
+}
+
+
+</style>
+
+Vamos a bootstrap y copiamos Nav en archivo App.vue:
+
+<template>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </nav>
+  <router-view/>
+</template>
+
+<style>
+#app {
+
+  color: #2c3e50;
+}
+
+
+</style>
+
+
+Funciona bien pero no funiona javascript el boton de Navbar:
+
+Introducimos en carpeta assets bootstrap.bundle.min.js:
+Vamos a main.js y llamamos a el archivo js:
+
+Importamos en main.js
+
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
+import "@/assets/bootstrap.rtl.min.css";
+import '@/assets/bootstrap.bundle.min.js'
+
+createApp(App).use(store).use(router).mount('#app')
+
+Ytenemos Javascript para el navbar
+
+/////////////////////////////////////////
+
+ELimino componente HelloWorld.vue 
+
+En AboutView.vue:
+
+<template>
+  <div class="about">
+    <h1>This is an about page</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis numquam voluptas accusamus praesentium minus nesciunt, labore maiores aliquid libero vero optio hic, tempore tenetur commodi aut quaerat necessitatibus deserunt rem.</h2>
+  </div>
+</template>
+
+En HomeView.vue:
+
+<template>
+  <div class="home">
+    <h2>HOME</h2>
+    <img alt="Vue logo" src="../assets/logo.png">
+    
+  </div>
+</template>
+
+<script>
+// @ is an alias to /src
+
+
+export default {
+  name: 'HomeView',
+  components: {
+    
+  }
+}
+</script>
+
+
+Formato de componente vue:
+
+<template>
+ html
+</template>
+
+<script>
+
+export default {
+
+  javascript  
+  
+}
+</script>
+
+<style>
+css
+</style>
+
+Creo componente PostsView.vue en carpeta views
+
+<template>
+    <h2>Posts page</h2>
+</template>
+
+<script>
+
+export default {
+
+    // javascript
+    
+
+}
+</script>
+
+<style>
+
+</style>
+
+Veo  link Posts pero falta decirle la ruta al rooter
+
+Minuto 19:20
+
+Vamos a la carpeta router:
+
+
+ARCHIVO index.js:
+
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
+
+const routes = [
+  {
+    path: '/',
+    name: 'home',
+    component: HomeView
+  },
+  {
+    path: '/about',
+    name: 'about',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+  }
+]
+
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes
+})
+
+export default router
+
+MODIFICAMOS ARCHIVO index.js para añadir ruta posts:
+
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
+
+const routes = [
+  {
+    path: '/',
+    name: 'home',
+    component: HomeView
+  },
+  {
+    path: '/about',
+    name: 'about',
+    // SOlo se importa cuando se active about 
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/PostsView.vue')
+  },
+  {
+    path: '/posts',
+    name: 'posts',
+   
+    component: () => import('../views/AboutView.vue')
+  }
+]
+
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes
+})
+
+export default router
+
+/////////////////////////
+
+
+
+/////////////////////////
+
+Iconos:
+https://fonts.google.com/icons?selected=Material+Symbols+Outlined:search:FILL@0;wght@400;GRAD@0;opsz@48
+
+Para utilizar en Home About Posts enves de texto logo.
+npm i material-icons
+
+Importamos en main.js(importar css js router stores)
+import 'material-icons/iconfont/material-icons.css'
+
+
+
+
+
+/////////////////////////
+

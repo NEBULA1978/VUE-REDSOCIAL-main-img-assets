@@ -1,0 +1,31 @@
+Queremos crear un componente para el Navbar:
+barra de navegacion superior este en about y post en App.vue.
+
+Creamos componente NavComp.vue,
+En App.vue quito el nav de la barra de navegacion y
+ pegamos en  NavComp.vue ,
+
+ En App.vue tengo que importar el componente:
+ import NavComp from '@/components/NavComp.vue'
+export default{
+  name:"App",
+  components:{
+    NavComp
+  }
+}
+
+INgresamos el componente en App.vue:
+  <!-- Componente -->
+ <NavComp />
+
+ En RoutesView creamos las rutas Home About Posts y 
+ para que funcione en App.vue importamos nombre componente
+
+En nav.Comp.vue:(para ver iconos)
+    <li class="nav-item">
+                        <router-link to="/" class="nav-link active" aria-current="page">
+                            <span class="material-icons">home</span>
+                        </router-link>
+
+                    </li>
+
