@@ -38,6 +38,13 @@
                         </router-link>
 
                     </li>
+                    <li class="nav-item">
+                        <!-- Sustituimos la a del link html por router-link -->
+                        <router-link to="/nosotros" class="nav-link active" aria-current="page">
+                            <span class="material-icons">featured_play_list</span>
+                        </router-link>
+
+                    </li>
                     
 
                 </ul>

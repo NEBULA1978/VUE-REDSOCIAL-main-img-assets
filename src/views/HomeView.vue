@@ -3,8 +3,9 @@
     <div class="background-image"></div>
     <div class="content">
       <h1>This is the Home Page</h1>
+      <div>Hola logo inicio</div>
     </div>
-    <img alt="Vue logo" src="/src/assets/model-x.avif">
+    <img alt="Vue logo" src="../assets/model-y.webp">
   </div>
 </template>
 

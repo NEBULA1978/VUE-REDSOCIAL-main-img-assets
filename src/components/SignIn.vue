@@ -1,6 +1,6 @@
 <template>
+    <!-- <img src="imagenes/LogoMakr-8eG4zk.png" alt="" /> -->
     <div id="contenido">
-        <img src="imagenes/LogoMakr-8eG4zk.png" alt="" />
 
         <section id="formulario">
             <h1>Sign In</h1>
