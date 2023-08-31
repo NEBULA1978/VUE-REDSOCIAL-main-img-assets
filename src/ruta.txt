@@ -1,0 +1,17 @@
+en views creo archivo  NosotrosView.vue 
+y en index.js añado la ruta:
+  {
+    path: '/nosotros',
+    name: 'nosotros',
+    
+    component: () => import( '../views/NosotrosView.vue')
+  }
+  
+en NavComp.vue añado la ruta para ver en navbar:
+                    <li class="nav-item">
+                        <!-- Sustituimos la a del link html por router-link -->
+                        <router-link to="/nosotros" class="nav-link active" aria-current="page">
+                            <span class="material-icons">featured_play_list</span>
+                        </router-link>
+
+                    </li>
