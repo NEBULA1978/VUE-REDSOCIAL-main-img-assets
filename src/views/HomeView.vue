@@ -5,7 +5,7 @@
       <h1>This is the Home Page</h1>
       <div>Hola logo inicio</div>
     </div>
-    <img alt="Vue logo" src="../assets/model-y.webp">
+    <!-- <img alt="Vue logo" src="../assets/model-y.webp"> -->
   </div>
 </template>
 

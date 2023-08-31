@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <NavComp />
+    <SignIn />
     <router-view />
     <!-- <img alt="Vue logo" src="../src/assets/model-x.avif"> -->
   </div>

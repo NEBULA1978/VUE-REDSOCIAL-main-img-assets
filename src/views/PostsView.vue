@@ -4,5 +4,5 @@
         <img alt="Vue logo" src="../assets/logo.png">
        
       </div>
-      <img alt="Vue logo" src="../assets/model-y.webp">
+      <!-- <img alt="Vue logo" src="../assets/model-y.webp"> -->
 </template>
